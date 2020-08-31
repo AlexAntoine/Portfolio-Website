@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.intro-section {
+    height: 850px;
+    padding-top: 170px;
+    background-image: url('../img/gray_laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #133060;
+
+}
