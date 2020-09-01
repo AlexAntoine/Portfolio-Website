@@ -6,10 +6,25 @@
 .intro-section {
     height: 850px;
     padding-top: 170px;
-    background-image: url('../img/gray_laptop.jpg');
+    background: linear-gradient(30deg,#133060,transparent 100%), 
+                #133060 url('../img/gray_laptop.jpg') no-repeat center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #133060;
+}
 
+h1{
+    color: #438EE5;
+}
+
+span,p{
+    color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
