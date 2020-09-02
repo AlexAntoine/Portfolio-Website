@@ -3,9 +3,13 @@
     box-sizing: border-box;
 }
 
-.intro-section {
-    height: 850px;
-    padding-top: 170px;
+p{
+    font-family: 'Rubik', sans-serif;
+}
+
+ .header-container {
+    height: 870px;
+    max-width: 100%;
     background: linear-gradient(30deg,#133060,transparent 100%), 
                 #133060 url('../img/gray_laptop.jpg') no-repeat center;
     background-size: cover;
@@ -13,18 +17,82 @@
 
 h1{
     color: #438EE5;
+    font-family: sans-serif;
 }
 
-span,p{
+.display-1 {
+    font-size: 4rem;
+}
+
+span,p, h4{
     color: #fff;
+}
+
+h4 {
+    margin-top: 24px;
+}
+
+p {
+    margin-top: 36px;
+}
+
+.hero{
+    position: relative;
+    top: 167px;
 }
 
 /* Navbar */
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
+    box-shadow: none !important;
+   
+}
+
+.navbar-nav{
+    position: relative;
+    left: 50%;
+}
+
+.nav-item  {
+   padding:0 80px 0 80px;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.collapse {
+    color: #fff;
+}
+
+/* Gallery Header */
+
+.gallery-header{
+    background:linear-gradient(90deg,#438EE5 0%, #2560BF 100%);
+    max-width: 100%;
+    color: #fff;
+    padding: 15px;
+    border: 2px solid white;
+}
+
+/* Gallery Section */
+
+.col{
+    padding: 0 !important;
+    
+}
+
+.dark-blue{
+    background-color: rgba(7, 57, 137, 0.796);
+    /* mix-blend-mode: multiply; */
+}
+
+.dark-blue:hover{
+    background-color: rgba(7, 57, 137, 0.295);
+    transition: 0.9s;
 }
