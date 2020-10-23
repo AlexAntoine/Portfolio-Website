@@ -96,3 +96,45 @@ p {
     background-color: rgba(7, 57, 137, 0.295);
     transition: 0.9s;
 }
+
+/* contact section */
+
+.contact-section {
+    width: 100vw;
+    display: flex;
+    /* background-color: red; */
+
+}
+
+.image-container {
+    width: 50%;
+    height: 490px;
+    background-color: #438EE5;
+}
+
+.about {
+    width: 50%;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10em;
+    left: 10em;
+}
+
+.about h1{
+    font-weight: bold;
+    color: black;
+}
+
+.about p{
+    color: black;
+}
+
+#man{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    margin: 20px auto auto;
+}
