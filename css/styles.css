@@ -152,6 +152,7 @@ p {
     flex-direction: column;
     width: 50%;
     height: 490px;
+    margin-top: 50px;
 }
 
 .description{
