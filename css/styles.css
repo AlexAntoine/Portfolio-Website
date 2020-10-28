@@ -83,8 +83,7 @@ p {
 /* Gallery Section */
 
 .col{
-    padding: 0 !important;
-    
+    padding: 0 !important;   
 }
 
 .dark-blue{
@@ -119,13 +118,18 @@ p {
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
-    top: 10em;
-    left: 10em;
+    /* top: 10em;
+    left: 10em; */
 }
 
 .about h1{
     font-weight: bold;
     color: black;
+}
+
+.about h1,
+.about p{
+    /* figure out how to center the content */
 }
 
 .about p{
@@ -137,4 +141,68 @@ p {
     height: 90%;
     object-fit: contain;
     margin: 20px auto auto;
+}
+
+.sub-section{
+    width: 100vw;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 490px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-form h2, 
+.contact-form p{
+    color: black;
+}
+
+.contact-form h2{
+    font-weight: bold;
+}
+
+textarea{
+    width: 278%;
+    position: relative;
+    right: 149px;
+    padding-left: 12px;
+    border-radius: 12px;
+}
+
+form input {
+    margin-bottom: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+button {
+    text-align: center;
+    color: #fff;
+    background-color:#438EE5;
+    width: 10em;
+    position: relative;
+    right: 142px;
+    top: 24px;
+    border-radius: 20px !important;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+}
+
+form input{
+    width: 400px;
+    position: relative;
+    right: 150px;
 }
