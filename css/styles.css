@@ -117,9 +117,6 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
-    /* top: 10em;
-    left: 10em; */
 }
 
 .about h1{
@@ -127,9 +124,9 @@ p {
     color: black;
 }
 
-.about h1,
-.about p{
-    /* figure out how to center the content */
+.about{
+    justify-content: center;
+    align-content: center;
 }
 
 .about p{
@@ -145,43 +142,34 @@ p {
 
 .sub-section{
     width: 100vw;
+    display: flex;
+    flex-direction: row;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
     width: 50%;
     height: 490px;
-    margin-top: 50px;
 }
 
-.description{
+form {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    width: 70%;
+    margin: 3.438em auto;
 }
 
-.contact-form h2, 
-.contact-form p{
-    color: black;
-}
-
-.contact-form h2{
+form h2{
     font-weight: bold;
 }
 
-textarea{
-    width: 278%;
-    position: relative;
-    right: 149px;
-    padding-left: 12px;
-    border-radius: 12px;
+form p{
+    color: black;
 }
 
 form input {
     margin-bottom: 24px;
     border-radius: 12px;
-    text-align: center;
+    padding: 5px;
 }
 
 button {
@@ -189,21 +177,75 @@ button {
     color: #fff;
     background-color:#438EE5;
     width: 10em;
-    position: relative;
-    right: 142px;
-    top: 24px;
     border-radius: 20px !important;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin: 0 auto;
+#message-box{
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-form input{
-    width: 400px;
-    position: relative;
-    right: 150px;
+.ways-to-contact {
+    background-color:#186bf1;
+    width: 50%;
+    height: 490px;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+}
+
+.main-content h2 {
+    margin-right: 124px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.contact-links{
+    list-style: none;
+    
+}
+
+.contact-links a {
+    color: #fff;
+}  
+
+.links{
+    display: flex;
+    
+}
+
+/* footer section */
+
+.footer-section {
+    width: 100%;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+}
+
+.footer-section h1{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+i{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.fab{
+    color: #438EE5;
 }
