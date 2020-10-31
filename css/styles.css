@@ -8,7 +8,7 @@ p{
 }
 
  .header-container {
-    height: 870px;
+    height: 760px;
     max-width: 100%;
     background: linear-gradient(30deg,#133060,transparent 100%), 
                 #133060 url('../img/gray_laptop.jpg') no-repeat center;
