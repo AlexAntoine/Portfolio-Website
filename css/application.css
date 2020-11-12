@@ -14,5 +14,26 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
    background-image: url('../img/gray_laptop.jpg');
+   /* background:linear-gradient(90deg,#438EE5 0%, #2560BF 100%); */
+   
 }
- 
+
+header h1{
+    display: inline;
+    position: relative;
+    top: 12.5rem;
+    left: 15.625rem;
+    font-size: 6rem;
+    color: #438EE5;
+}
+
+.first-section{
+}
+
+.image{
+    background-image: url('../img/computer_with_code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 490px;
+    width: 100vw;
+}
