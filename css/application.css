@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,7 +14,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
    background-image: url('../img/gray_laptop.jpg');
-   /* background:linear-gradient(90deg,#438EE5 0%, #2560BF 100%); */
+   /* background:linear-gradient(90deg,#438EE5 0%, #2560BF 100%);
    
 }
 
@@ -27,12 +27,23 @@ header h1{
     color: #438EE5;
 }
 
-
-
 .image{
     background-image: url('../img/computer_with_code.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 490px;
     width: 100vw;
+}  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-section{
+    background: linear-gradient(30deg, #133060, transparent),
+    url('../img/computer_with_code.jpg') no-repeat, center;
+    height: 40vh;
+    background-size: cover;
 }
