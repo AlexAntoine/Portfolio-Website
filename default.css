@@ -17,17 +17,56 @@ html, body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Russo One', sans-serif;
+    
 }
 
 h1, h2, h3, h4, h5, h6, strong{
 
     color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
 }
 
 p, li, span, label, input, textarea{
     color: var(--secondaryText);
     font-family: 'Roboto Mono', monospace;
+}
+
+.greeting-wrapper{
+    display: grid;
+    border: 2px solid red;
+    min-height: 10em;
+    text-align: center;
+    align-content: center;
+}
+
+.intro-wrapper{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+    'nav-wrapper nav-wrapper'
+    'left-column right-column'
+    ;
+}
+
+.nav-wrapper, .left-column, .right-column{
+    border: 1px dashed lightcoral;
+}
+
+.nav-wrapper{
+    grid-area: nav-wrapper;
+}
+
+.left-column{
+    grid-area: left-column;
+}
+
+.right-column{
+    grid-area: right-column;
 }
 h1{font-size: 56px}
 h2{font-size: 36px}
