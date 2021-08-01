@@ -28,6 +28,10 @@ html, body{
     
 }
 
+body *{
+    transition: 0.3s;
+}
+
 h1, h2, h3, h4, h5, h6, strong{
 
     color: var(--mainText);
@@ -81,6 +85,10 @@ p, li, span, label, input, textarea{
     display: inline-block;
     margin-right: 5px;
     margin-left: 5px;
+}
+
+#navigation a{
+    color: var(--mainText);
 }
 
 .dots-wrapper{
