@@ -24,8 +24,17 @@ app.listen(3000,()=>{
 
 app.get('/', (req, res)=>{
 
-    res.render('home');
+    res.render('home',{
+        title:'Hello, I\'m Don-Alex'
+    });
 });
+
+app.get('/post', (req,res)=>{
+    
+    res.render('post',{
+        postTitle: 'Projects'
+    });
+})
 
 app.post('/', (req, res)=>{
 

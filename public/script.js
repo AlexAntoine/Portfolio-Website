@@ -2,11 +2,16 @@ console.log('hello');
 
 let theme = localStorage.getItem('theme');
 
+console.log('the theme is', theme);
+
 if(theme === null){
     setTheme('light');
+    console.log('first line');
 
 }else{
+    console.log('second line');
     setTheme(theme);
+    
 }
 
 let themeDots = document.getElementsByClassName('theme-dot')
