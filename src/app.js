@@ -18,9 +18,11 @@ app.set('views',viewsPath);
 hbs.registerPartials(partialsPath);
 
 
-app.listen(3000,()=>{
+app.listen(3001,()=>{
     console.log('server is listening on port 3000');
 });
+
+/***** GET ROUTES ******/
 
 app.get('/', (req, res)=>{
 
@@ -34,6 +36,20 @@ app.get('/post', (req,res)=>{
     res.render('post',{
         postTitle: 'Projects'
     });
+});
+
+// app.get('/post/*',(req, res)=> {
+
+//     console.log(res);
+//     console.log(req);
+//     res.render('post',{
+//         ProjectName: 'balls',
+//     })
+// });
+
+app.get('/post/daily-journal', (req, res)=>{
+
+    res.render('dj');
 })
 
 app.post('/', (req, res)=>{

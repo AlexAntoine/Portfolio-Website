@@ -1,0 +1,71 @@
+{{>postHeader}}
+
+<div class="nav-wrapper">
+        <div class="dots-wrapper"> 
+            <div id="dot-1" class="browser-dots"></div>
+            <div id="dot-2" class="browser-dots"></div>
+            <div id="dot-3" class="browser-dots"></div>
+        </div>
+        <ul id="navigation"> 
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+    </div>
+
+    <div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="https://images.unsplash.com/photo-1526280760714-f9e8b26f318f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80">
+		</div>
+		
+		<h3>Daily Journal</h3>
+
+		<p>Daily Journal is an application that allows user to create and publish blog post. Users are can create or sign in an through traditional login or through google authentication.
+		<br>
+		<br>
+		User posts and passwords are stored in a mongoDB database. I use passport to authenicate local sign and passport-google-auth for google sign in.
+        I use EJS to allow me to pass data from the back end to the front end. The cloud service Heroku was used to host the front end portion of the app and the 
+        back end is hosted on mongo Atles. You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/Blog-Website">Daily-Journal.</a> 
+        </p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Node js</li>
+			<li>- MongoDB</li>
+			<li>- Express </li>
+			<li>- EJS</li>
+			<li>- Heroku</li>
+			<li>- Mongo Atlas</li>
+            <li> <a class="web-link" href="https://antoine-dj.herokuapp.com/" target="_blank">- Daily Journal Website</a></li>
+		</ul>
+
+
+		<h5>Login Page</h5>
+		<div class="img-container">
+			<img src="/images/login.png">
+		</div>
+
+		<h5>User Home Page</h5>
+		<div class="img-container">
+            <img src="/images/user_home.png">
+		</div>
+
+		<h5>Blog Posts</h5>
+		<div class="img-container">
+			<img src="/images/post.png">
+		</div>
+
+		<h5>Home Page</h5>
+		<div class="img-container">
+			<img src="/images/user_home.png">
+		</div>
+
+		<h5>Compose Page</h5>
+		<div class="img-container">
+			<img src="/images/compose.png">
+		</div>
+
+	</div>
+
+{{>postFooter}}

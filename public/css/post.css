@@ -377,6 +377,31 @@ h3{
     text-align: center;
 }
 
+.web-link{
+    color:#4B5155;
+}
+
+.web-link:hover{
+    color: #17a2b8;
+}
+
+.web-link:visited{
+    color: #17a2b8;
+}
+
+.project-github{
+    color: #4B5155;
+}
+
+.project-github:visited{
+
+    color: #17a2b8;
+}
+
+.project-github:hover{
+    color:#17a2b8;
+}
+
 
 @media screen and (max-width:1200px){
 
