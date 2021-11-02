@@ -50,7 +50,11 @@ app.get('/post', (req,res)=>{
 
 app.get('/post/daily-journal', (req, res)=>{
 
-    res.render('dj');
+    res.render('daily-journal');
+});
+
+app.get('/post/chat-app', (req, res)=>{
+    res.render('chat-app')
 })
 
 app.post('/', (req, res)=>{
