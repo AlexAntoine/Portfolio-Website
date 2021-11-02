@@ -17,9 +17,10 @@ app.set('view engine', 'hbs');
 app.set('views',viewsPath);
 hbs.registerPartials(partialsPath);
 
+const port = process.env.PORT|| 3000
 
-app.listen(3001,()=>{
-    console.log('server is listening on port 3000');
+app.listen(port,()=>{
+    console.log(`Server is listening on ${port}`);
 });
 
 /***** GET ROUTES ******/
