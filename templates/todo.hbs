@@ -1,0 +1,69 @@
+{{>postHeader}}
+
+<div class="nav-wrapper">
+        <div class="dots-wrapper"> 
+            <div id="dot-1" class="browser-dots"></div>
+            <div id="dot-2" class="browser-dots"></div>
+            <div id="dot-3" class="browser-dots"></div>
+        </div>
+        <ul id="navigation"> 
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+    </div>
+
+    <div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+		</div>
+		
+		<h3>Todo App</h3>
+
+		<p>The Todo application allows user to create todo list that allows user to keep track of daily goals and objectives. Users are able to create their own account, 
+		create custom list, add items and remove items from those lists.
+		<br>
+		<br>
+		The Todo applcation was built with HTML, CSS for the front end and Node Js, Express, and MongoDB for the backend. Heroku and Mongo Atlas were used for both front end and 
+		backend deployment. I used various libaries for the backedn portion this application. I used bycrpt to to hash user passwords, I also used jsonwebtoken to authenticate user and store 
+		those tokens in a cookie. I used middleware to authenicate the certain routes ensuring that only user that have already login can access those routes.
+		The data is represent by three schemas; users, list, and items. The user schema consist of username, password,, email , and and array object tokens to store all of jsonwebtokens generated.
+		Inside this schema I've create several helper methods such as one generate jsonwebtoken, one to find a user based on their credentials, and method that hash the password entered before saving.
+		You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/To-Do-List">Todo App.</a> 
+        </p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Node js</li>
+			<li>- MongoDB</li>
+			<li>- Express </li>
+			<li>- EJS</li>
+			<li>- Heroku</li>
+			<li>- Mongo Atlas</li>
+            <li> <a class="web-link" href="https://antoine-todo-app.herokuapp.com/" target="_blank">- Todo Application</a></li>
+		</ul>
+
+
+		<h5>Login Page</h5>
+		<div class="img-container">
+			<img src="/images/todo-app/login_screen.png">
+		</div>
+
+		<h5>User Home Page</h5>
+		<div class="img-container">
+            <img src="/images/todo-app/user_home_screen.png">
+		</div>
+
+		<h5>List Screen</h5>
+		<div class="img-container">
+			<img src="/images/todo-app/list_screen.png">
+		</div>
+
+		<h5>Signup Page</h5>
+		<div class="img-container">
+			<img src="/images/todo-app/signup_screen.png">
+		</div>
+	</div>
+
+{{>postFooter}}
