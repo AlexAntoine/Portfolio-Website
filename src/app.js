@@ -17,7 +17,7 @@ app.set('view engine', 'hbs');
 app.set('views',viewsPath);
 hbs.registerPartials(partialsPath);
 
-const port = process.env.PORT|| 3000
+const port = process.env.PORT|| 4000
 
 app.listen(port,()=>{
     console.log(`Server is listening on ${port}`);
@@ -39,28 +39,24 @@ app.get('/post', (req,res)=>{
     });
 });
 
-// app.get('/post/*',(req, res)=> {
-
-//     console.log(res);
-//     console.log(req);
-//     res.render('post',{
-//         ProjectName: 'balls',
-//     })
-// });
-
 app.get('/post/daily-journal', (req, res)=>{
 
     res.render('dj');
 })
 
-app.post('/', (req, res)=>{
+app.get('/post/todo', (req, res)=>{
+    
+    res.render('todo');
+})
 
-    console.log(req);
+// app.post('/', (req, res)=>{
 
-    const {email, subject, message} = req.body;
+//     console.log(req);
 
-    sendEmail(email,subject, message);
+//     const {email, subject, message} = req.body;
 
-    res.redirect('/');
+//     sendEmail(email,subject, message);
 
-});
+//     res.redirect('/');
+
+// });
