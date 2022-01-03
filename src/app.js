@@ -17,7 +17,7 @@ app.set('view engine', 'hbs');
 app.set('views',viewsPath);
 hbs.registerPartials(partialsPath);
 
-const port = process.env.PORT|| 4000
+const port = process.env.PORT|| 3000
 
 app.listen(port,()=>{
     console.log(`Server is listening on ${port}`);
@@ -41,7 +41,11 @@ app.get('/post', (req,res)=>{
 
 app.get('/post/daily-journal', (req, res)=>{
 
-    res.render('dj');
+    res.render('daily-journal');
+});
+
+app.get('/post/chat-app', (req, res)=>{
+    res.render('chat-app')
 })
 
 app.get('/post/todo', (req, res)=>{
