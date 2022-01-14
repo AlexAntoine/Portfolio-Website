@@ -21,16 +21,16 @@
 		
 		<h3>Todo App</h3>
 
-		<p>The Todo application allows user to create todo list that allows user to keep track of daily goals and objectives. Users are able to create their own account, 
-		create custom list, add items and remove items from those lists.
+		<p>The Todo application allows users to create a to-do list that allows users to keep track of daily goals and objectives. 
+			Users are able to create their own accounts, create a custom list, add items and remove items from those lists.
 		<br>
 		<br>
-		The Todo applcation was built with HTML, CSS for the front end and Node Js, Express, and MongoDB for the backend. Heroku and Mongo Atlas were used for both front end and 
-		backend deployment. I used various libaries for the backedn portion this application. I used bycrpt to to hash user passwords, I also used jsonwebtoken to authenticate user and store 
-		those tokens in a cookie. I used middleware to authenicate the certain routes ensuring that only user that have already login can access those routes.
-		The data is represent by three schemas; users, list, and items. The user schema consist of username, password,, email , and and array object tokens to store all of jsonwebtokens generated.
-		Inside this schema I've create several helper methods such as one generate jsonwebtoken, one to find a user based on their credentials, and method that hash the password entered before saving.
-		You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/To-Do-List">Todo App.</a> 
+		The Todo application is built with simple HTML, CSS for the front-end portion, and Node Js, Express, and MongoDB for the backend. 
+		I used Heroku to deploy the application and Mongo Atlas to deploy the database. I used various libraries for the backend portion of this application such as bycrpt to hash user passwords,  
+		and JSON web token to authenticate a user and store those tokens in a cookie. Middleware was utilized to help authenticate certain routes ensuring that only users that have already login can access those routes. 
+		The data is represented by three schemas; users, list, and items. The user schema consists of a username, password, email, and an array of object tokens to store all of the JSON web tokens generated. 
+		Inside this schema, I've created several helper methods such as one generating JSON web token, one to find a user based on their credentials, 
+		and a method that hash the password entered before saving. You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/To-Do-List">Todo App.</a> 
         </p>
 
 		<h5>Technologies:</h5>
