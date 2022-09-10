@@ -4,6 +4,7 @@ const path = require('path');
 const hbs = require('hbs');
 const bodyParser = require('body-parser');
 const {sendEmail} = require('../email/message');
+const pageRouters = require('../Router/routes');
 
 const app = express();
 
@@ -23,44 +24,4 @@ app.listen(port,()=>{
     console.log(`Server is listening on ${port}`);
 });
 
-/***** GET ROUTES ******/
-
-app.get('/', (req, res)=>{
-
-    res.render('home',{
-        title:'Hello, I\'m Don-Alex'
-    });
-});
-
-app.get('/post', (req,res)=>{
-    
-    res.render('post',{
-        postTitle: 'Projects'
-    });
-});
-
-app.get('/post/daily-journal', (req, res)=>{
-
-    res.render('daily-journal');
-});
-
-app.get('/post/chat-app', (req, res)=>{
-    res.render('chat-app')
-})
-
-app.get('/post/todo', (req, res)=>{
-    
-    res.render('todo');
-})
-
-// app.post('/', (req, res)=>{
-
-//     console.log(req);
-
-//     const {email, subject, message} = req.body;
-
-//     sendEmail(email,subject, message);
-
-//     res.redirect('/');
-
-// });
+app.use('/', pageRouters);
