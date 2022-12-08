@@ -30,6 +30,11 @@ router.get('/post/todo', (req, res)=>{
     res.render('todo');
 });
 
+router.get('/post/devcamper',(req, res)=>{
+
+    res.render('devcamper_api');
+});
+
 router.post('/email', (req, res)=>{
     const {email, subject, message,} = req.body;
     

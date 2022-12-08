@@ -1,0 +1,69 @@
+{{>postHeader}}
+
+<div class="nav-wrapper">
+        <div class="dots-wrapper"> 
+            <div id="dot-1" class="browser-dots"></div>
+            <div id="dot-2" class="browser-dots"></div>
+            <div id="dot-3" class="browser-dots"></div>
+        </div>
+        <ul id="navigation"> 
+            <li><a href="/">Home</a></li>
+        </ul>
+    
+    </div>
+
+    <div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="https://images.unsplash.com/photo-1623282033815-40b05d96c903?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80">
+		</div>
+		
+		<h3>Devcamper API</h3>
+
+		<p>DevCamper-Api is a bootcamp directory API created with Node, Express, and MongoDB. This application is equipped with authentication, roles, permissions, password reset tokens, email functionality, and geocoding. 
+            Other functionalities include pagination, filter, selecting, and sorting.
+		<br>
+		<br>
+		The Todo application is built with simple HTML, CSS for the front-end portion, and Node Js, Express, and MongoDB for the backend. 
+		I used Heroku to deploy the application and Mongo Atlas to deploy the database. I used various libraries for the backend portion of this application such as bycrpt to hash user passwords,  
+		and JSON web token to authenticate a user and store those tokens in a cookie. Middleware was utilized to help authenticate certain routes ensuring that only users that have already login can access those routes. 
+		The data is represented by three schemas; users, list, and items. The user schema consists of a username, password, email, and an array of object tokens to store all of the JSON web tokens generated. 
+		Inside this schema, I've created several helper methods such as one generating JSON web token, one to find a user based on their credentials, 
+		and a method that hash the password entered before saving. You can find the GitHub repo here: <a class="project-github" target="_blank" href="https://github.com/AlexAntoine/Devcamper-api/tree/main">Devcamper API.</a> 
+        </p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Node js</li>
+			<li>- MongoDB</li>
+			<li>- Express </li>
+			<li>- Heroku</li>
+			<li>- Mongo Atlas</li>
+            <li> <a class="web-link" href="https://antoine-devcamper-api.herokuapp.com/" target="_blank">- Devcamper-API</a></li>
+		</ul>
+
+
+		<h5>Login Page</h5>
+		<div class="img-container">
+			<a href="/images/todo-app/login_screen.png"><img src="/images/todo-app/login_screen.png"></a>
+		</div>
+
+		<h5>User Home Page</h5>
+		<div class="img-container">
+			<a href="/images/todo-app/user_home_screen.png"><img src="/images/todo-app/user_home_screen.png"></a>
+		</div>
+
+		<h5>List Screen</h5>
+		<div class="img-container">
+			<a href="/images/todo-app/list_screen.png"><img src="/images/todo-app/list_screen.png"></a>
+			
+		</div>
+
+		<h5>Signup Page</h5>
+		<div class="img-container">
+			<a href="/images/todo-app/signup_screen.png"><img src="/images/todo-app/signup_screen.png"></a>
+		</div>
+	</div>
+
+{{>postFooter}}
