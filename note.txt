@@ -1,0 +1,3 @@
+ADDED components for the front. I need to work on the functionality next.
+I also need to figure out the carousel situation before moving onto fetching data
+from the API.
