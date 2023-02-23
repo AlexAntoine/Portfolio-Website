@@ -1,7 +1,11 @@
 import React from "react";
 
-const SectionOne = ()=>{
+function importStyle(){
+//import style when button is clicked
+//im going to have to use setState to change the import
+}
 
+const SectionOne = ()=>{
     return(
         <div className='s1'>
         <div className="main-container">
@@ -29,10 +33,10 @@ const SectionOne = ()=>{
 
                     <div id="theme-options-wrapper">
 
-                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
-                        <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
-                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
-                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+                        <div onClick={importStyle} data-mode="light" className="theme-dot" id="light-mode"></div>
+                        <div onClick={importStyle} data-mode="blue" className="theme-dot" id="blue-mode"></div>
+                        <div onClick={importStyle} data-mode="green" className="theme-dot" id="green-mode"></div>
+                        <div onClick={importStyle} data-mode="purple" className="theme-dot" id="purple-mode"></div>
                     </div>
 
                     <p id="setting-note">*Theme options will be saved for your next visit</p>
@@ -41,14 +45,14 @@ const SectionOne = ()=>{
                 <div className="right-column">
                     <div id="preview-shadow">
                         <div id="preview">
-                            <div id="corner-tl" class="corner"></div>
-                            <div id="corner-tr" class="corner"></div>
+                            <div id="corner-tl" className="corner"></div>
+                            <div id="corner-tr" className="corner"></div>
                             
                             <h3>What I Do </h3>
                             <p>Aspiring software developer that enjoys building new things</p>
 
-                            <div id="corner-br" class="corner"></div>
-                            <div id="corner-bl" class="corner"></div>
+                            <div id="corner-br" className="corner"></div>
+                            <div id="corner-bl" className="corner"></div>
                         </div>
                     </div>
                 </div>

@@ -9,16 +9,16 @@ const Contact = () =>{
 
                 <form action="/email" method="POST"  id="contact-form">
                     <label for="">Name</label>
-                    <input type="text" class="input-field" name="name"/>
+                    <input type="text" className="input-field" name="name"/>
 
                     <label>Subject</label>
-                    <input type="text" name="subject" class="input-field"/>
+                    <input type="text" name="subject" className="input-field"/>
 
                     <label>Email</label>
-                    <input type="text" name="email" class="input-field"/>
+                    <input type="text" name="email" className="input-field"/>
 
                     <label>Message</label>
-                    <textarea class="input-field" name="message"></textarea>
+                    <textarea className="input-field" name="message"></textarea>
                     <input type="submit" value="send" id="submit-btn"></input>
                 </form>
 
