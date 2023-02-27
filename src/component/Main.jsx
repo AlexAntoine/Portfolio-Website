@@ -1,6 +1,6 @@
 import React from "react";
 
-function importStyle(){
+function greenStyle(){
 //import style when button is clicked
 //im going to have to use setState to change the import
 }
@@ -35,7 +35,7 @@ const SectionOne = ()=>{
 
                         <div onClick={importStyle} data-mode="light" className="theme-dot" id="light-mode"></div>
                         <div onClick={importStyle} data-mode="blue" className="theme-dot" id="blue-mode"></div>
-                        <div onClick={importStyle} data-mode="green" className="theme-dot" id="green-mode"></div>
+                        <div onClick={greenStyle} data-mode="green" className="theme-dot" id="green-mode"></div>
                         <div onClick={importStyle} data-mode="purple" className="theme-dot" id="purple-mode"></div>
                     </div>
 
